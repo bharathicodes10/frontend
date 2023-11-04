@@ -1,0 +1,70 @@
+/* CSS (Navbar.css) */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-button {
+    display: none; /* Hide menu button by default for larger screens */
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display the list as a flex container */
+    align-items: center; /* Center the list items vertically */
+  }
+  
+  .navbar-list-right {
+    display: ${menuOpen ? 'flex' : 'none'}; /* Show/hide right links when the menu is open/closed */
+    align-items: center; /* Center the right links vertically */
+  }
+  
+  .navbar-list li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu-button {
+      display: block; /* Display the menu button for smaller screens */
+    }
+  
+    .navbar-list-right {
+      display: ${menuOpen ? 'flex' : 'none'}; /* Show/hide right links when the menu is open/closed */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar.open {
+      background-color: #333; /* Background color for open menu */
+    }
+  
+    .bar {
+      background-color: #fff;
+    }
+  }
+  

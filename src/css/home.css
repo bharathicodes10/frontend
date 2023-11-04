@@ -1,0 +1,81 @@
+/* Home.css */
+.home {
+    padding: 20px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .service-card a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 100%;
+    }
+  }
+  
+
+  /* ServiceList.css */
+
+.service-list-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.service-label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.service-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.service-label:hover {
+  background-color: #e6e6e6;
+}
